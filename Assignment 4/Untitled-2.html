@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Features</title>
+    <style>
+        /* Box Shadow and Text Shadow */
+        .shadow-box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            box-shadow: 5px 5px 15px gray;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 4px gray;
+        }
+        
+        /* Rounded Corners */
+        .rounded-box {
+            width: 200px;
+            height: 100px;
+            background-color: lightcoral;
+            border-radius: 20px;
+            margin: 20px;
+            text-align: center;
+            line-height: 100px;
+        }
+        
+        /* Background Positioning and Repeating */
+        .repeat-background {
+            background: url('https://source.unsplash.com/400x400/?pattern') repeat-x;
+            height: 200px;
+        }
+        
+        /* Resizable Background */
+        .resize-background {
+            background: url('https://source.unsplash.com/1600x900/?landscape') no-repeat center;
+            background-size: contain;
+            height: 300px;
+        }
+        
+        /* Styled Hyperlinks */
+        a {
+            color: pink;
+            text-decoration: none;
+        }
+        a:visited {
+            color: green;
+        }
+        a:active {
+            color: blue;
+        }
+        
+        /* Border Image */
+        .border-image {
+            width: 300px;
+            height: 150px;
+            border: 20px solid;
+            border-image: url('https://source.unsplash.com/400x400/?texture') 30 round;
+            margin: 20px;
+            text-align: center;
+            line-height: 150px;
+        }
+        
+        /* Ensure the body takes full height */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        
+        /* Background Image Styling */
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .background-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container">
+        <img src="https://source.unsplash.com/1600x900/?nature" alt="Background Image">
+    </div>
+    <div class="shadow-box">Box Shadow & Text Shadow</div>
+    <div class="rounded-box">Rounded Corners</div>
+    <div class="repeat-background">Repeating Background Image</div>
+    <div class="resize-background">Resizable Background Image</div>
+    <p>Check out this <a href="#">styled hyperlink</a>.</p>
+    <div class="border-image">Border Image</div>
+</body>
+</html>

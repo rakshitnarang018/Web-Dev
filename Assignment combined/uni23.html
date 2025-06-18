@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .parallax {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+        }
+
+        .content {
+            padding: 50px;
+            font-size: 1.2em;
+            text-align: center;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parallax" style="background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=1600');">
+        Parallax Scrolling Effect
+    </div>
+
+    <div class="content">
+        <h2>Welcome</h2>
+        <p>Scroll down to see the effect.</p>
+    </div>
+
+    <div class="parallax" style="background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1600');">
+        Another Parallax Section
+    </div>
+
+    <div class="content">
+        <h2>Enjoy</h2>
+        <p>The background moves slower than the content.</p>
+    </div>
+
+</body>
+</html>
+

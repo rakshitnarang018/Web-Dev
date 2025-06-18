@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <title>To-Do List</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+        } 
+        input { 
+            padding: 8px; 
+            width: 60%; 
+        } 
+        button { 
+            padding: 8px; 
+            cursor: pointer; 
+            background: green; 
+            color: white; 
+            border: none; 
+        } 
+        ul { 
+            list-style: none; 
+            padding: 0; 
+        } 
+        li { 
+            background: lightgray; 
+            padding: 8px; 
+            margin: 5px; 
+            display: flex; 
+            justify-content: space-between; 
+        } 
+        .delete { 
+            background: rgb(242, 154, 154); 
+            color: white; 
+            border: none; 
+            cursor: pointer; 
+            padding: 5px; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <h2>To-Do List</h2> 
+ 
+    <input type="text" id="task" placeholder="Enter task"> 
+    <button onclick="addTask()">Add</button> 
+    <ul id="taskList"></ul> 
+    <script> 
+        function addTask() { 
+            let taskInput = document.getElementById("task"); 
+            if (taskInput.value.trim() === "") return; 
+            let li = document.createElement("li"); 
+            li.innerHTML = taskInput.value + ' <button class="delete" onclick="this.parentElement.remove()"> </button>'; 
+            document.getElementById("taskList").appendChild(li); 
+            taskInput.value = ""; 
+        } 
+    </script> 
+</body> 
+</html>

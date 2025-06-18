@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Car Showcase</title>
+</head>
+<body>
+
+    <h1>Interactive Car Showcase</h1>
+    <p>Click on different parts of the car to learn more.</p>
+
+    <img src="car-image.jpg" alt="Car Image" usemap="#carmap" width="800">
+
+    <map name="carmap">
+        <area shape="circle" coords="180,400,50" href="wheels.html" alt="Front Wheel">
+        <area shape="circle" coords="620,400,50" href="wheels.html" alt="Rear Wheel">
+        <area shape="poly" coords="300,150,500,150,550,300,250,300" href="engine.html" alt="Engine">
+        <area shape="poly" coords="280,160,520,160,530,380,270,380" href="interior.html" alt="Interior">
+    </map>
+
+</body>
+</html>

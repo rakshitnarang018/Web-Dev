@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #394751; /* Dark Gray-Black background */
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #2C2F33; /* Slightly lighter dark for contrast */
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(134, 194, 50, 0.2); /* Subtle glow from bright green */
+    border-radius: 15px;
+}
+
+h1, h2 {
+    color: #86C232; /* Bright Green for main headings */
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #61892F; /* Light Green for labels */
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #6B6E70; /* Soft Gray-Green border */
+    border-radius: 7px;
+    background-color: #474B4F; /* Medium Gray background */
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.btn-primary {
+    background-color: #86C232; /* Bright Green */
+}
+
+.btn-success {
+    background-color: #61892F; /* Light Green */
+}
+
+.btn-warning {
+    background-color: #6B6E70; /* Soft Gray-Green */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Keeping classic red for danger */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #2C2F33; /* Table background matching container */
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #6B6E70; /* Soft Gray-Green border line */
+}
+
+th {
+    background-color: #474B4F; /* Medium Gray for headers */
+    color: #86C232; /* Bright Green text for table headers */
+}
+
+.message {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    background-color: #86C232; /* Bright Green background for messages */
+    color: #222629; /* Dark text for contrast */
+}
+
+.action-buttons {
+    margin: 20px 0;
+}
+
+.modal {
+    display: none;
+    background-color: #474B4F; /* Medium Gray for modals */
+    border: 1px solid #6B6E70;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+    color: #ffffff;
+}

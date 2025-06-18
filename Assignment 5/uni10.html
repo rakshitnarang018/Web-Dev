@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Webpage</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        nav a { margin-right: 15px; text-decoration: none; font-weight: bold; }
+        table, th, td { border: 1px solid black; border-collapse: collapse; padding: 10px; }
+        video, audio, iframe { display: block; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Advanced HTML5 Webpage</h1>
+    </header>
+    
+    <nav>
+        <a href="#form">Form</a>
+        <a href="#multimedia">Multimedia</a>
+        <a href="#faq">FAQ</a>
+        <a href="#table">Table</a>
+    </nav>
+    
+    <section id="form">
+        <h2>Interactive Form</h2>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                Name: <input type="text" required><br>
+                Email: <input type="email" required><br>
+                Password: <input type="password" required><br>
+                Phone: <input type="tel"><br>
+                DOB: <input type="date"><br>
+                Favorite Color: <input type="color"><br>
+                Rating: <input type="range" min="1" max="10"><br>
+                Age: <input type="number" min="1" max="100"><br>
+                Upload File: <input type="file"><br>
+                Comments: <textarea rows="4"></textarea><br>
+                <label>Choose an option:</label>
+                <select>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                </select><br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </fieldset>
+        </form>
+    </section>
+    
+    <section id="multimedia">
+        <h2>Multimedia Content</h2>
+        <video width="400" controls>
+            <source src="video.mp4" type="video/mp4">
+            <track src="captions.vtt" kind="subtitles" srclang="en" label="English">
+            Your browser does not support the video tag.
+        </video>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+    
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <details>
+            <summary>What is HTML5?</summary>
+            <p>HTML5 is the latest version of the HTML standard.</p>
+        </details>
+    </section>
+    
+    <section id="table">
+        <h2>Data Table</h2>
+        <table>
+            <caption>Sample Table</caption>
+            <thead>
+                <tr>
+                    <th>Name</th><th>Age</th><th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td><td>30</td><td>New York</td>
+                </tr>
+                <tr>
+                    <td>Jane</td><td>25</td><td>London</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">End of Data</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    
+    <article>
+        <h2>Latest News</h2>
+        <p>This section contains the latest updates on web technologies.</p>
+    </article>
+    
+    <aside>
+        <h2>Related Articles</h2>
+        <p>Check out more articles on HTML5 advancements.</p>
+    </aside>
+    
+    <section>
+        <h2>Embedded Content</h2>
+        <iframe src="https://www.google.com/maps" width="600" height="400"></iframe>
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" width="600" height="400" allowfullscreen></iframe>
+        <iframe src="document.pdf" width="600" height="400"></iframe>
+        <a href="document.pdf" download>Download PDF</a>
+    </section>
+    
+    <section>
+        <h2>Progress & Meter</h2>
+        <label>Task Progress:</label>
+        <progress value="70" max="100"></progress><br>
+        <label>Battery Level:</label>
+        <meter value="0.8">80%</meter>
+    </section>
+    
+    <marquee>Scrolling Text with Marquee (Deprecated)</marquee>
+    
+    <dialog open>
+        <p>This is a popup message!</p>
+    </dialog>
+    
+    <ruby>
+        漢 <rp>(</rp><rt>Kan</rt><rp>)</rp>
+        字 <rp>(</rp><rt>Ji</rt><rp>)</rp>
+    </ruby>
+    
+    <footer>
+        <p>&copy; 2025 My Webpage</p>
+    </footer>
+</body>
+</html>
+

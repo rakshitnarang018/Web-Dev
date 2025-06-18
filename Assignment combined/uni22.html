@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Gradient Border</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #222;
+        }
+
+        .border-box {
+            width: 300px;
+            height: 200px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            border: 10px solid transparent;
+            border-image-slice: 0.5;
+            animation: borderAnimation 5s linear infinite;
+        }
+
+        @keyframes borderAnimation {
+            0% {
+                border-image-source: linear-gradient(45deg, red, orange);
+            }
+            25% {
+                border-image-source: linear-gradient(45deg, orange, yellow);
+            }
+            50% {
+                border-image-source: linear-gradient(45deg, yellow, green);
+            }
+            75% {
+                border-image-source: linear-gradient(45deg, green, blue);
+            }
+            100% {
+                border-image-source: linear-gradient(45deg, blue, red);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="border-box">Animated Border</div>
+
+</body>
+</html>

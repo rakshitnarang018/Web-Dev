@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Color Changer</title>
+    <style>
+        body {
+            text-align: center;
+            transition: background 0.5s;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            color: white;
+        }
+        .beige { background: #F7D9C4; }
+        .blue { background: #bbd6ed; }
+        .lavander { background: #c7b7df; }
+    </style>
+</head>
+<body>
+    <h1>Click a Button to Change Background</h1>
+    <button class="beige" onclick="changeColor('beige')">Beige</button>
+    <button class="blue" onclick="changeColor('blue')">Blue</button>
+    <button class="lavander" onclick="changeColor('lavander')">Lavander</button>
+    
+    <script>
+        function changeColor(color) {
+            document.body.className = color;
+        }
+    </script>
+</body>
+</html>

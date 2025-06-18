@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        form {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            margin: 5px 0;
+            padding: 8px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+        }
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <form id="regForm">
+        <input type="text" id="name" placeholder="Student Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="phone" placeholder="Phone Number (10 digits)" required>
+        <input type="date" id="dob" required>
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male" required> Male
+        <input type="radio" name="gender" value="Female" required> Female
+        <input type="radio" name="gender" value="Other" required> Other
+        <select id="course" required>
+            <option value="">Select Course</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="B.Sc">B.Sc</option>
+            <option value="BBA">BBA</option>
+        </select>
+        <textarea id="address" placeholder="Address" required></textarea>
+        <input type="password" id="password" placeholder="Password (min 6 chars)" required>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+        <p class="error" id="errorMsg"></p>
+        <button type="submit">Register</button>
+    </form>
+    <script>
+        document.getElementById("regForm").addEventListener("submit", function(event) {
+            let phone = document.getElementById("phone").value;
+            let password = document.getElementById("password").value;
+            let confirmPassword = document.getElementById("confirmPassword").value;
+            let errorMsg = document.getElementById("errorMsg");
+            if (phone.length !== 10 || isNaN(phone)) {
+                errorMsg.innerText = "Phone number must be exactly 10 digits.";
+                event.preventDefault();
+                return;
+            }
+            if (password.length < 6) {
+                errorMsg.innerText = "Password must be at least 6 characters.";
+                event.preventDefault();
+                return;
+            }
+            if (password !== confirmPassword) {
+                errorMsg.innerText = "Passwords do not match.";
+                event.preventDefault();
+                return;
+            }
+            alert("Registration Successful!");
+        });
+    </script>
+</body>
+</html>

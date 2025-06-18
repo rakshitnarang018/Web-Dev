@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <title>Digital Clock</title> 
+    <style> 
+        body { 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            background: rgb(255, 255, 255); 
+        } 
+        #clock { 
+            font-size: 60px; 
+            font-weight: bold; 
+            color: white; 
+            background: rgb(179, 129, 218); 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3); 
+        } 
+    </style> 
+</head> 
+<body> 
+    <div id="clock">00:00:00</div> 
+    <script> 
+        function updateClock() { 
+            let now = new Date(); 
+            let time = now.toLocaleTimeString(); 
+            document.getElementById("clock").innerText = time; 
+        } 
+        setInterval(updateClock, 1000); 
+        updateClock(); 
+    </script> 
+</body> 
+</html> 
+ 
+
